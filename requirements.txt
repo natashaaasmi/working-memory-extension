@@ -12,8 +12,6 @@ backoff==2.2.1
 bcrypt==4.0.1
 blinker==1.7.0
 blis==0.7.11
-bop-cal==0.0.0
-Brotli @ file:///private/tmp/python-brotli-20231117-5241-4nexpv/Brotli-1.1.0
 build==1.0.3
 cachetools==5.3.2
 catalogue==2.0.10
