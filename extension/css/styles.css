@@ -1,0 +1,362 @@
+body {
+    /* padding:10px; */
+    /* margin:20px; */
+    margin-bottom: 40px;
+    margin-top: 120px;
+    background-color:rgb(29, 30, 31);
+    /* color: rgb(238, 238, 238); */
+    color: rgb(212, 212, 212);
+    z-index:0;
+}
+
+a {
+    color: rgb(238, 238, 238);
+    font-size:medium;
+    font-weight:bolder;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+
+hr {
+    border: none;
+    border-top: 0.5px solid gray;
+    height: 1px;
+    margin-top: 5px;
+    /* margin: 10px 0; */
+}
+
+button {
+    outline: none !important;
+}
+#content {
+    margin: 20px;
+}
+
+.btn {
+    background-color: #cacaca;
+    /* color: #ffffff; */
+    border-radius: 10px;
+    padding:5px;
+    /* border: #3b603d; */
+    outline: none;
+    margin:3px;
+}
+
+#headerElements {
+    position: fixed;
+    top:0px;
+    padding:10px;
+    padding-left:20px;
+    padding-top:20px;
+    /* left:20px; */
+    /* top: 10px; */
+    background: linear-gradient(to bottom, rgba(29, 30, 31, 1) 50%, rgba(29, 30, 31, 0) 100%);
+    /* filter: blur(2px); */
+    /* background-color:rgb(29, 30, 31); */
+    z-index:1;
+}
+
+#clear {
+    /* background-color: #b15852; */
+    /* border-radius: 10px; */
+    padding:5px;
+    /* border: #5d403e; */
+    /* outline:none; */
+    margin:3px;
+}
+#clear:hover {
+    /* background-color:#b15852; */
+    /* font-style:italic; */
+    color: #fb5145;
+}
+
+.dynamicCards {
+    position: relative;
+    background-color:rgb(40, 42, 43);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    border:1px solid #444343;
+    margin-bottom: 20px;
+    padding:10px;
+    border-radius: 10px;
+    outline: none;
+    /* z-index:2; */
+}
+
+.clearText {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 20px; /* Set the width equal to height to make it a square */
+    height: 20px; /* Set the height equal to width to make it a square */
+    line-height: 20px; /*Vertically center the text*/
+    text-align: center; /* Horizontally center the text */
+    background-color: transparent;
+    border: none;
+    margin: 3px;
+    border-radius: 5px;
+    color: black;
+    cursor:pointer;
+    /* font-weight: bold; */
+    /* margin-bottom: 5px; */
+}
+
+.clearText:hover {
+    background-color: rgba(170, 170, 170, 0.58);
+}
+
+#ask_gpt {
+    /* padding:10px; */
+    /* top: 25px; */
+    /* position:fixed; */
+    width:75%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding:12px;
+    border-radius:20px;
+    border:1px solid rgb(212, 212, 212);
+    border:none;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    outline:none;
+    background-color:rgb(40, 42, 43);
+    color: rgb(212, 212, 212);
+    font-weight: lighter;
+    z-index:1;
+}
+
+#text-summary {
+    /* background-color:#ffffff; */
+    /* margin-top:10px; */
+    padding:10px;
+    padding-left:17.5px;
+    border-radius:10px;
+    /* border:1px solid #ccc; */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    outline:none;
+}
+
+#thepoint {
+    background-color:#2d2f32;
+    /* margin-top:10px; */
+    padding:10px;
+    border-radius:10px;
+    border:1px solid #444343;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    outline:none;
+}
+
+#quiz {
+    position: relative;
+    background-color:rgb(40, 42, 43);
+    /* margin-top:20px; */
+    padding:10px;
+    border-radius:10px;
+    /* border:1px solid #5d5d5d; */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    outline:none;
+}
+
+.close-button {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 7px;
+    font-weight: bold;
+    color: #333;
+}
+
+#questionDivId {
+    padding-left:10px;
+    padding-right:10px;
+    /* padding-bottom: px; */
+    /* background-color:#e3e3e3; */
+    color: rgb(212, 212, 212);
+}
+
+#answerDivId {
+    padding-left:15px;
+    padding-right:15px;
+    padding-bottom:15px;
+    /* padding-bottom: 25px; */
+    /* background-color:#e3e3e3; */
+    color:rgb(154, 154, 154);
+}
+
+.navItem {
+    margin: 5px;
+    font-weight:light;
+    font-size:small;
+    color: rgb(218, 218, 218);
+}
+
+.navItem:hover {
+    /* font-style: italic; */
+    /* text-decoration: underline; */
+    color:rgb(52, 140, 255);
+}
+
+/* nav bar */
+nav { 
+    margin-top:10px;
+}
+ul {
+    list-style-type:none;
+    margin:0;
+    padding:0;
+    /* list-style-type:disc; */
+    /* list-style-type: disc !important; */
+}
+ul li {
+    /* float:left; */
+    /* display:block; */
+    margin-left: 1.5em;
+    list-style-type: disc;
+    margin-bottom:0.5em;
+    
+}
+
+nav ul {
+    list-style-type:none;
+    margin:0;
+    padding:0;
+    overflow:hidden;
+}
+
+nav ul li {
+    margin:0;
+    list-style-type:none;
+    float:left;
+}
+
+#rectangle {
+    background-color: #dcdcdc;
+    height:20px;
+    width:70%;
+    border-radius: 10px;
+    margin-bottom:10px;
+    /* animation: colorChange 1.5s infinite alternate ease-in-out; */
+}
+
+#longer-rectangle {
+    background-color: #dcdcdc;
+    height:40px;
+    width: 85%;
+    border-radius: 10px;
+    margin-bottom:10px;
+    /* animation: colorChange 1.5s infinite alternate ease-in-out; */
+}
+
+#short-rectangle {
+    background-color: #dcdcdc;
+    height:20px;
+    width: 50%;
+    border-radius: 10px;
+    margin-bottom:10px;
+    /* animation: colorChange 1.5s infinite alternate ease-in-out; */
+}
+
+.rectangles {
+    animation: colorChange 1.5s infinite alternate ease-in-out;
+}
+
+/* #loader-box {
+    animation: colorChange 1.5s infinite alternate ease-in-out;
+} */
+
+@keyframes colorChange {
+    0% {
+        background-color:#2c2c2c;
+    }
+    50% {
+        background-color: #3e3e3e;
+    }
+    100% {
+        background-color: #2c2c2c;
+    }
+}
+
+.horizontal-stack {
+    display: flex;
+    overflow-x:auto;
+}
+
+.item {
+    background-color:#b15852;
+    height:100px;
+    width: 200px;
+    padding:10px;
+    border-radius:10px;
+    margin-right: 10px;
+}
+
+/* dropdown menu */
+.dropdown {
+    position: fixed;
+    left: 20px;
+    bottom: 20px;
+    padding-top: 20px;
+}
+
+.dropbtn {
+    background-color: #38a9ffed;
+    color: rgb(212, 238, 255);
+    padding: 8px;
+    padding-left:15px;
+    padding-right:15px;
+    margin-top: 20px;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    /* z-index:1; */
+}
+
+.dropbtn:hover {
+    background-color: #38a9ff;
+}
+
+.dropdown-content {
+    display: none;
+    /* display: block; */
+    position: relative;
+    background-color: #2c2c2cd5;
+    min-width: 120px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    padding: 10px;
+    border:1px solid #444343;
+    border-radius:10px;
+}
+
+.dropdown-content a {
+    font-size: small;
+    font-weight: light;
+    /* display: block; */
+}
+
+.dropdown-content a:hover {
+    color: #bebebe;
+}
+
+#chevron-down {
+    text-align: center;
+    vertical-align: middle;
+    margin-top: 20px;
+}
+
+#bottomRect {
+    height:40px;
+    width:100%;
+    background-color:transparent;
+}
+/* Change color of dropdown links on hover
+.dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  /* Show the dropdown menu on hover */
+  /* .dropdown:hover .dropdown-content {
+    display: block;
+  } */
