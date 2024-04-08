@@ -1,0 +1,15 @@
+body {
+    padding:10px;
+    margin:20px;
+}
+
+#topicsearch {
+    width:75%;
+    margin-bottom: 10px;
+    padding:10px;
+    border-radius:20px;
+    border:1px solid #ccc;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    outline:none;
+}   
+
