@@ -312,4 +312,5 @@ def split_text(text,length=1000):
 
 if __name__ == '__main__':
     PORT = int(os.environ.get('PORT', 8000))
+    print("PORT: ", PORT)
     app.run(port=PORT,debug=True)
