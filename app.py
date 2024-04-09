@@ -2,6 +2,7 @@ import flask
 from flask import Flask, jsonify, request, Response, send_from_directory
 from openai import OpenAI 
 from flask_cors import CORS
+import os
 
 client = OpenAI()
 
@@ -310,4 +311,5 @@ def split_text(text,length=1000):
 
 
 if __name__ == '__main__':
-    app.run(port=8000,debug=True)
+    PORT = int(os.environ.get('PORT', 8000))
+    app.run(port=PORT,debug=True)
