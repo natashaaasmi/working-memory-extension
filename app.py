@@ -9,6 +9,7 @@ client = OpenAI()
 app = Flask(__name__)
 app.config['CORS_HEADERS'] = 'Content-Type', 'Access-Control-Allow-Origin'
 CORS(app)
+PORT = int(os.environ.get('PORT', 8000))
 
 @app.before_request # this is what worked
 def basic_auth():
@@ -69,7 +70,7 @@ def define():
 @app.route("/summarize", methods=['GET','POST'])
 def summarize():
     if request.method == 'GET':
-        return "Summarize text"
+        return PORT
     elif request.method == 'POST':
         input = request.json['input'].replace(" ", "")
         print(input)
@@ -311,6 +312,5 @@ def split_text(text,length=1000):
 
 
 if __name__ == '__main__':
-    PORT = int(os.environ.get('PORT', 8000))
     print("PORT: ", PORT)
     app.run(port=PORT,debug=True)
