@@ -1,6 +1,6 @@
 //service worker
 //create side panel
-const url = "https://working-memory-extension-ce0c9e3e984d.herokuapp.com"
+const global_url = "https://working-memory-extension-ce0c9e3e984d.herokuapp.com"
 const GOOGLE_ORIGIN = 'https://www.google.com';
 chrome.tabs.onUpdated.addListener(async (tabId, info, tab) => {
     if (!tab.url) return;
@@ -205,7 +205,7 @@ chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
 });
 
 async function getResponse(text, callback, type, contextText="") {
-    const url = url + type;
+    const url = global_url + type;
     console.log('Chosen URL:', url)
     console.log("Text to be JSON: ", text)
     console.log("Type: ", type)
@@ -238,7 +238,7 @@ async function getResponse(text, callback, type, contextText="") {
 }
 
 async function getChunkedResponse(textArray, callback, type){
-    const url = url + type;
+    const url = global_url + type;
     console.log('Chosen URL:', url)
     var responseArray = [];
     textArray.forEach(async text => {

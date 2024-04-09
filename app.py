@@ -229,6 +229,7 @@ def ask_gpt():
             response_format = {"type":"json_object"} 
         )
         response = resp.choices[0].message.content
+        print("Response: ", response)
         json_response = jsonify({"message":response})
     return json_response
 
