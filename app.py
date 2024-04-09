@@ -65,9 +65,11 @@ def define():
 
     return response
 
-@app.route("/summarize", methods=['POST'])
+@app.route("/summarize", methods=['GET','POST'])
 def summarize():
-    if request.method == 'POST':
+    if request.method == 'GET':
+        return "Summarize text"
+    elif request.method == 'POST':
         input = request.json['input'].replace(" ", "")
         print(input)
         print(type(input))
