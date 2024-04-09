@@ -311,5 +311,5 @@ def split_text(text,length=1000):
 
 
 if __name__ == '__main__':
-    print("PORT: ", PORT)
-    app.run(port=PORT,debug=True)
+    # print("PORT: ", PORT)
+    app.run(debug=True)
