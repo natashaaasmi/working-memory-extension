@@ -168,9 +168,9 @@ def quiz():
         previous_quizzes = request.json['previousQuizzes']
         print(f'Input: {input}, Previous quizzes: {previous_quizzes}')
         system = f"""
-            You are a helpful assistant that generates quizzes that helps reader to engage with what they just read. Given a text, pay attention to the portions that are likely to be important or interesting to the reader when learning about the topic as a whole, rather than fun facts or trivia. Generate a difficult question with a single answer that helps the reader engage with one of those portions. When generating questions, make sure you're asking about things you haven't asked about before.
+            You are a helpful assistant that generates quizzes that helps reader to engage with what they just read. Given a text, pay attention to the portions that are likely to be important or interesting to the reader when learning about the topic as a whole. Generate a difficult question with a single, concrete answer that helps the reader engage with and remember one of these portions. When generating questions, make sure you're asking about things you haven't asked about before.
             
-            For example, you can ask them what a certain word means, ask them why a certain phenomenon happens, or what the definition of a particular concept is. If you are dealing with a technical text, make sure to ask precise technical questions. 
+            For example, you can ask them what a certain word means, ask them why a certain phenomenon happens, what the definition of a particular concept is, or about a certain concrete fact. If you are dealing with a technical text, make sure to ask precise technical questions. 
 
             Make sure to phrase the question and answer in a way that reader will be able to use it as a spaced repetition flashcard outside the context of the specific text, even after months have passed. 
 
