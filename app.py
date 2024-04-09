@@ -1,4 +1,3 @@
-import flask
 from flask import Flask, jsonify, request, Response, send_from_directory
 from openai import OpenAI 
 from flask_cors import CORS
