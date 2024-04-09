@@ -1,6 +1,6 @@
 //service worker
 //create side panel
-const global_url = "https://working-memory-extension-ce0c9e3e984d.herokuapp.com"
+const global_url = "https://working-memory-extension-ce0c9e3e984d.herokuapp.com/"
 const GOOGLE_ORIGIN = 'https://www.google.com';
 chrome.tabs.onUpdated.addListener(async (tabId, info, tab) => {
     if (!tab.url) return;
